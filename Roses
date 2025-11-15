@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>This Is How Much I Love You</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffe6f2;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      width: 340px;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      position: relative;
+      z-index: 2;
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .heart {
+      font-size: 60px;
+      animation: beat 2s infinite;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.25); }
+    }
+
+    h2 {
+      color: #ff0066;
+      margin-top: 10px;
+      font-size: 24px;
+    }
+
+    p {
+      color: #444;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    /* Floating roses */
+    .rose {
+      position: absolute;
+      font-size: 35px;
+      animation: floatUp 7s linear infinite;
+      opacity: 0.9;
+    }
+
+    @keyframes floatUp {
+      0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Floating Roses -->
+<div class="rose" style="left: 10%;">🌹</div>
+<div class="rose" style="left: 40%; animation-delay: 2s;">🌹</div>
+<div class="rose" style="left: 70%; animation-delay: 4s;">🌹</div>
+<div class="rose" style="left: 85%; animation-delay: 1s;">🌹</div>
+<div class="rose" style="left: 25%; animation-delay: 3s;">🌹</div>
+
+<div class="card">
+  <div class="heart">❤️</div>
+  <h2>This is how much I love you</h2>
+  <p>
+    More than every sunrise,<br>
+    more than every moment,<br>
+    more than every rose. 🌹💗
+  </p>
+</div>
+
+</body>
+</html>
